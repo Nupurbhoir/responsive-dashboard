@@ -21,13 +21,7 @@ Built with Flutter using
 
 ---
 
-## 📊 Project Overview
 
-<div align="center">
-
-![Dashboard Infographic](assets/dashboard-infographic.png)
-
-</div>
 
 ---
 
