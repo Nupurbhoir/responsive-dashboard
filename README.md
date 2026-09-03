@@ -1,78 +1,74 @@
-cat > README.md <<'EOF'
 # 🟧 Responsive Dashboard
 
-A modern, responsive **Flutter Dashboard** designed to adapt seamlessly across **Mobile, Tablet, and Desktop** screen sizes.
+<div align="center">
 
-Built specifically to demonstrate responsive Flutter UI using:
+### A Modern Responsive Flutter Dashboard
 
+**Mobile • Tablet • Desktop**
+
+Built with Flutter using  
 `ListView` • `GridView` • `MediaQuery` • `Expanded` • `Flexible`
+
+<br>
+
+![Flutter](https://img.shields.io/badge/Flutter-3.22%2B-02569B?logo=flutter)
+![Dart](https://img.shields.io/badge/Dart-3.0%2B-0175C2?logo=dart)
+![Material](https://img.shields.io/badge/Material%20Design-3-757575?logo=materialdesign)
+![Responsive](https://img.shields.io/badge/UI-Responsive-FF6B00)
+![Status](https://img.shields.io/badge/Status-Completed-22C55E)
+
+</div>
+
+---
+
+## 📊 Project Overview
+
+<div align="center">
+
+![Dashboard Infographic](assets/dashboard-infographic.png)
+
+</div>
 
 ---
 
 ## ✨ Preview
 
-> A clean Orange + White + Black dashboard interface with responsive layouts, statistics, sales analytics, quick actions, and recent activity.
+A clean **Orange + White + Black** dashboard designed to adapt automatically to different screen sizes.
 
 ### 🖥️ Desktop
 
-![Responsive Dashboard Desktop](assets/dashboard-desktop.pdf)
+<div align="center">
+
+![Desktop Dashboard](assets/dashboard-desktop.png)
+
+</div>
 
 ### 📱 Responsive Views
 
-![Responsive Dashboard](assets/dashboard-responsive.pdf)
+<div align="center">
+
+![Responsive Dashboard](assets/dashboard-responsive.png)
+
+</div>
 
 ---
 
-## 🎯 Project Objective
+## 🎯 Objective
 
-The objective of this project is to create a **multi-section responsive dashboard** that automatically adapts its layout according to the available screen width.
+The goal of this project is to build a **multi-section responsive dashboard** using Flutter's built-in responsive layout capabilities.
 
-The application demonstrates practical usage of Flutter's responsive layout widgets rather than relying on a fixed-size interface.
+The interface automatically adapts according to the available screen width instead of using a fixed layout.
 
----
+### Core Flutter concepts
 
-## 🚀 Key Features
-
-- 📊 Responsive statistics dashboard
-- 📈 Weekly sales overview
-- 👥 User and customer statistics
-- 🛒 Order management section
-- 📦 Product management section
-- ⚡ Quick action panel
-- 📝 Recent activity feed
-- 🔔 Notification button
-- 👤 Profile button
-- 🆘 Support section
-- 📱 Mobile bottom navigation
-- 📂 Mobile/tablet navigation drawer
-- 🖥️ Desktop permanent sidebar
-- 🎨 Orange, White & Black theme
-- 📐 Fully responsive layout
-- ✅ Overflow-safe UI
-- 🧩 Reusable Flutter components
-
----
-
-## 📱 Responsive Design
-
-The dashboard automatically changes its layout depending on screen width.
-
-```mermaid
-flowchart LR
-    A[Screen Width] --> B{MediaQuery}
-
-    B -->|< 600px| C[📱 Mobile]
-    B -->|600 - 1099px| D[📟 Tablet]
-    B -->|≥ 1100px| E[🖥️ Desktop]
-
-    C --> C1[2 Column Grid]
-    C --> C2[Stacked Sections]
-    C --> C3[Bottom Navigation]
-
-    D --> D1[2 Column Grid]
-    D --> D2[Expanded Content]
-    D --> D3[Drawer Navigation]
-
-    E --> E1[4 Column Grid]
-    E --> E2[Sidebar Navigation]
-    E --> E3[Multi-column Layout]
+```text
+MediaQuery
+     ↓
+Detect Screen Width
+     ↓
+┌──────────────┬──────────────┬──────────────┐
+│    Mobile    │    Tablet    │   Desktop    │
+│   < 600px    │ 600–1099px   │  ≥ 1100px    │
+└──────────────┴──────────────┴──────────────┘
+     ↓
+Adaptive Dashboard
